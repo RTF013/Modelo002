@@ -19,6 +19,7 @@ body {
     font-family: "nunito", helvetica, arial, sans-serif;
     color: #222222;
     
+    
 }
 
 ul {
@@ -53,6 +54,7 @@ img {
     flex-wrap: wrap;
     padding-top: 10px;
     position: fixed;
+    
 }
 
 .superinfo p,
