@@ -1,3 +1,20 @@
+/* Definindo a animação */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); /* Posição inicial e final: sem deslocamento vertical */
+    }
+    40% {
+      transform: translateY(-30px); /* Deslocamento para cima no meio da animação */
+    }
+    60% {
+      transform: translateY(-15px); /* Deslocamento para cima no meio da animação */
+    }
+  }
+  
+ 
+  
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -12,8 +29,14 @@ a {
     margin: 0;
     padding: 0;
 }
-
-
+.nome {
+    color: white;
+}
+.nome:hover {
+    transform: scale(1.5); /* Aumenta em 20% no tamanho */
+    transition: transform 0.8s ease; /* Adiciona uma transição suave de 0.3 segundos */
+    color:#0a0a0a;    
+}
 
 body {
     font-family: "nunito", helvetica, arial, sans-serif;
@@ -33,6 +56,12 @@ a {
 img {
     display: block;
     max-width: 100%;
+    border-radius: 40%;
+}
+
+img:hover {
+    transform: scale(1.2); /* Aumenta em 20% no tamanho */
+    transition: transform 0.8s ease; /* Adiciona uma transição suave de 0.3 segundos */
 }
 
 * {
@@ -114,9 +143,16 @@ img {
 }
 
 .menu-nav a:hover {
-    color: #141414; 
     
+     /* Aplicando a animação a um elemento específico quando o mouse passa por cima */
+     transform: scale(1.3); /* Aumenta em 20% no tamanho */
+     transition: transform 0.4s ease; /* Adiciona uma transição suave de 0.3 segundos */
+     color:#0a0a0a;
+  
 }
+
+
+
 
 /*introdução*/
 
